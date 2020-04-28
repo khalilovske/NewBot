@@ -28,8 +28,8 @@ class db_manager():
         return response.json()
 
     def save_all_data(self, data):
-        self.__cursor.execute("CREATE DATABASE IF NOT EXISTS COVID_19;")
-        self.__cursor.execute("USE COVID_19;")
+        self.__cursor.execute("CREATE DATABASE IF NOT EXISTS khalilov;")
+        self.__cursor.execute("USE khalilov;")
         self.__cursor.execute(
             "CREATE TABLE IF NOT EXISTS CORONA (id INT AUTO_INCREMENT PRIMARY KEY, Country VARCHAR(255), "
             "Slug VARCHAR(255), NewConfirmed INT(10), TotalConfirmed INT(10),NewDeaths INT(10),TotalDeaths INT(10), "
@@ -55,7 +55,7 @@ class db_manager():
             print(self.__cursor.rowcount, "Case added")
 
     def show_cases(self, data):
-        self.__cursor.execute("USE COVID_19;")
+        self.__cursor.execute("USE khalilov;")
         sql = "SELECT * FROM CORONA "
         self.__cursor.execute(sql)
         records = self.__cursor.fetchall()
@@ -71,7 +71,7 @@ class db_manager():
             print("Date == ", item[8])
 
     def show_cases_by_country(self, data, country):
-        self.__cursor.execute("USE COVID_19;")
+        self.__cursor.execute("USE khalilov;")
         sql = "SELECT * FROM CORONA WHERE Country = '" + country + "'"
         self.__cursor.execute(sql)
         myresult = self.__cursor.fetchall()

@@ -1,4 +1,4 @@
-host = "localhost"
+host = "13.92.93.62"
 user = "root"
-passwd = ""
-database = ""
+passwd = "my-secret-root"
+database = "khalilov"
