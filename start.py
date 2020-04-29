@@ -2,7 +2,7 @@ from lib.db_manager import db_manager, token
 from lib.settings import *
 import telebot
 __URL = "https://api.covid19api.com/summary"
-db_object = db_manager(host, user, passwd, database, __URL)
+db_object = db_manager(host, user, passwd, __URL)
 covid_19_data = db_object.get_all_data()
 
 
