@@ -10,7 +10,7 @@ def menu():
     exit = False
     while not exit:
         choice = int(
-            input("1.Update covid19 database\n2.Show all cases\n3.Show cases by country\n0.Exit \n===>"))
+            input("1.Update khalilov database\n2.Show all cases\n3.Show cases by country\n0.Exit \n===>"))
         if choice == 1:
             db_object.save_all_data(covid_19_data)
         elif choice == 2:

@@ -1,3 +1,4 @@
 /env
 /.vscode
 /lib/__pycache__
+/jenkinsFile.jenkins
