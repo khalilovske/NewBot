@@ -1,3 +1,3 @@
-host = "104.211.0.221"
+host = "13.53.170.220"
 user = "root"
-passwd = "my-secret-pass"
+passwd = "my-secret-pw"
