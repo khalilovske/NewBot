@@ -1,3 +1,3 @@
-host = "18.219.155.13"
+host = "13.59.43.201"
 user = "root"
 passwd = "password"
