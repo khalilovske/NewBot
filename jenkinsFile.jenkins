@@ -42,7 +42,7 @@ pipeline  {
             steps {
                 echo " ============== stoping all containers =================="
                 sh '''
-                docker stop telegram
+                docker stop telegram 
                 '''
             }
         } 
