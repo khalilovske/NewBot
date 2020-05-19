@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 ENV DB_HOST=localhost
 ENV DB_USER=root
-ENV DB_PASSWORD=
+ENV DB_PASSWORD=password
 ENV TELEGRAM_TOKEN= 
 
 

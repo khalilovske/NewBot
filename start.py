@@ -33,7 +33,7 @@ def menu():
             print("Bye...")
 
 
-# menu()
+menu()
 
 
 bot = telebot.TeleBot(token)
